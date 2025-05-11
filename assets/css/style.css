@@ -839,12 +839,12 @@ main {
 
 .skills-title { margin-bottom: 20px; }
 
-.skills-list { padding: 20px; }
+/* .skills-list { padding: 20px; } */
 
 
-.skills-item:not(:last-child) { margin-bottom: 15px; }
+/* .skills-item:not(:last-child) { margin-bottom: 15px; } */
 
-.skill .title-wrapper {
+/* .skill .title-wrapper {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -868,7 +868,7 @@ main {
   background: var(--text-gradient-yellow);
   height: 100%;
   border-radius: inherit;
-}
+} */
 
 
 
@@ -2081,4 +2081,95 @@ body.light-theme .navbar-link:focus {
 }
 body.light-theme .navbar-link.active {
   color: hsl(40, 90%, 55%); /* Adjusted active link color for light theme */
+}
+
+
+
+
+
+
+/* //////////// teck skils css///////// */
+.tech-stack-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    /* border-radius: var(--radius-md); */
+    /* box-shadow: var(--shadow-sm);  Removed box-shadow */ 
+}
+
+.tech-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.7;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    width: 80px;
+    text-align: center;
+}
+
+.tech-icon:hover {
+    transform: scale(1.2);
+    opacity: 1;
+}
+
+.tech-icon img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    border: 1px solid var(--border-color); /* Use the CSS variable */
+}
+
+.tech-icon span {
+    font-size: 0.8rem;
+    color: var(--text-color); /* Use the CSS variable */
+}
+
+/* Animations */
+.tech-icon {
+    animation: fadeIn 1s ease-out forwards, float 2s ease-in-out infinite alternate;
+    opacity: 0;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.7;
+    }
+}
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px);
+  }
+}
+
+/* Staggered appearance */
+.tech-stack-container .tech-icon:nth-child(1) {
+    animation-delay: 0.2s;
+}
+.tech-stack-container .tech-icon:nth-child(2) {
+    animation-delay: 0.4s;
+}
+.tech-stack-container .tech-icon:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.tech-stack-container .tech-icon:nth-child(4) {
+    animation-delay: 0.8s;
+}
+.tech-stack-container .tech-icon:nth-child(5) {
+    animation-delay: 1.0s;
+}
+.tech-stack-container .tech-icon:nth-child(6) {
+    animation-delay: 1.2s;
+}
+.tech-stack-container .tech-icon:nth-child(7) {
+    animation-delay: 1.4s;
 }
