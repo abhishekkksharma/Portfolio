@@ -390,6 +390,10 @@ main {
 
 .info_more-btn span { display: none; }
 
+/* body.light-theme .info_more-btn{
+  color: var(--bg-gradient-jet);
+} */
+
 .sidebar-info_more {
   opacity: 0;
   visibility: hidden;
@@ -1227,6 +1231,15 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover { background: var(--border-gradient-onyx); }
 
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
+
+/* light theme */
+body.light-theme .form-btn {
+  color: var(--bg-gradient-jet);
+}
+body.light-theme .form-btn:hover{
+  background-color: #d3d3d3;
+}
+body.light-theme .form-btn:hover::before { background: #d3d3d3; }
 
 
 
