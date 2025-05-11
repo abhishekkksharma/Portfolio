@@ -1981,6 +1981,7 @@ body.light-theme article {
   /* Potentially update box-shadows if they are too dark for light theme */
 }
 
+body.light-theme .download-btn p,
 body.light-theme .h2,
 body.light-theme .h3,
 body.light-theme .h4,
